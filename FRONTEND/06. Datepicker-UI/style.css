@@ -1,1 +1,69 @@
 
+*{
+	padding: 0;margin: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+	height: 100dvh;
+	background-color: #f0f0f0;
+}
+.calender {
+	width: 301px;
+	margin: 30px auto;
+}
+.calender-header {
+	width: 100%;
+	background-color: black;
+	color: white;
+	display: flex;
+	gap: 5px;
+	padding: 10px 5px;
+	justify-content: space-between;
+}
+.calender-header h1 {
+	font-size: 20px;
+	text-wrap: nowrap;
+}
+.calender-header input {
+	width: 120px;
+	background-color: #3b3b3b;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 0px 5px;
+}
+.burger {
+	width: 25px;
+	height: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.burger span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: white;
+}
+.calender-body {
+	width: 100%;
+	background-color: white;
+}
+.days {
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+}
+.days span {
+	padding: 5px 0px;
+}
+.tanggal {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tanggal span {
+	width: 43px;
+	text-align: center;
+	padding: 5px 0px;
+}
