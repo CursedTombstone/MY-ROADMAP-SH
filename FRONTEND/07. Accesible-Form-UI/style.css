@@ -1,0 +1,96 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Comic Sans MS;
+	color: white;
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+	height: 100dvh;
+	background-image: url('Fontaine.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: 0.5s all;
+	background-color: aqua;
+}
+form {
+	max-width: 100%;
+	background-color: #ffffff10;
+	backdrop-filter: blur(7px);
+	padding: clamp(20px, 70px, 10%);
+	margin: 10%;
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	box-shadow: 10px 10px 10px #0000005a, -10px -10px 10px #ffffff5a;
+}
+h1 span{
+	color: aqua;
+}
+h1{
+	
+}
+h2{
+	font-weight: 200;
+	text-align: center;
+}
+p {
+	text-align: center;
+}
+button, input {
+	border: none;
+	outline: none;
+}
+button {
+	padding: 10px ;
+}
+input {
+	padding: 10px;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 0px;
+}
+input::placeholder {
+	color: white;
+}
+.ggl {
+	background-color: #484848;
+}
+.sign {
+	background-color: skyblue;
+	color: ;
+}
+.sign:hover {
+	box-shadow: 5px 5px 5px #0000005a inset, -5px -5px 10px #ffffff5a inset;
+}
+.furina {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	display: none;
+}
+@media(min-width:850px){
+	*{
+	}
+	form {
+		margin: 0;
+		width: 50%;
+		height: 100%;
+		backdrop-filter: blur(20px);
+		padding: 10%;
+	}
+	.furina {
+		transform: translateX(100%);
+		width: 100%;
+		object-fit: cover;
+		display: block;
+	}
+	button, input {
+		padding: 20px;
+		font-size: 25px;
+	}
+}
